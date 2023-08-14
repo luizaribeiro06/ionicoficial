@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>IA</ion-title>
+    <ion-buttons slot="end">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+
+  <ion-list *ngIf="listaIa"> 
+
+    <ion-item-sliding *ngFor="let ia of listaIa"> 
+      <ion-item lines="full" (click)="exibirIa(ia)"> 
+        <ion-thumbnail slot="start"> 
+          <img *ngIf="ia.foto" src="{{ia.foto}}" /> 
+          <ion-icon *ngIf="!ia.foto" name="videocam-off"></ion-icon> 
+        </ion-thumbnail>
+
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>{{ia.nome}}</h1>
+            
+            <p>{{ia.data}}</p>
+            <ion-badge color="medium" *ngFor="let extra of ia.extra"> 
+              {{extra}}
+            </ion-badge>
+            <ion-icon name="star" [color]="ia.favorito===true ? 'warning' : ('light')"></ion-icon> 
+            
+          </div>
+        </ion-label>
+
+        <ion-chip [color]="ia.classificacao < 5 ? 'danger' : (ia.classificacao < 7 ? 'warning' : 'success')"
+          outline> 
+          <ion-label>{{ia.classificacao}}</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end"> 
+        <ion-item-option color="primary"> 
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+  </ion-list>
+</ion-content>

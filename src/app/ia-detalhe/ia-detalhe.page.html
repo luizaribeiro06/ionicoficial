@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>{{ia.nome}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card *ngIf="ia"> 
+    <ion-card-header>
+      <img *ngIf="ia.foto" src="{{ia.foto}}" />
+      <ion-icon *ngIf="!ia.foto" name="videocam-off"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>{{ia.nome}} <ion-icon name="star" [color]="ia.favorito===true ? 'warning' : ('light')"></ion-icon></h1>
+      <p>{{ia.data}}
+        <ion-chip [color]="ia.classificacao < 5 ? 'danger' : ((ia.classificacao < 7 ? 'warning' : 'success'))"
+          outline>
+          <ion-label>{{ia.classificacao}}</ion-label>
+        </ion-chip>
+      </p>
+      <h2>{{ia.titulo}}</h2>
+      <p>{{ia.paragrafo1}}</p>
+    <br/>
+      <h2>{{ia.subtitulo}}</h2>
+      <p>{{ia.paragrafo2}}</p>
+    </ion-card-content>
+    <ion-item class="extra">
+      <ion-badge color="medium" *ngFor="let extra of ia.extra">{{extra}}</ion-badge>
+    </ion-item>
+   
+  </ion-card>
+
+</ion-content>
