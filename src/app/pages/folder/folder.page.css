@@ -1,0 +1,16 @@
+.cardnoticia {
+  margin: 6%;
+}
+
+.cardsnoticias {
+  -moz-column-width: 40px;
+       column-width: 40px;
+  align-items: center;
+  margin: 6%;
+  margin-top: 5px;
+}
+
+.cards {
+  margin: 6%;
+  align-items: center;
+}/*# sourceMappingURL=folder.page.css.map */
