@@ -12,20 +12,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'transporte',
-    loadChildren: () => import('./pages/transporte/transporte.module').then( m => m.TransportePageModule)
-  },
-  {
-    path: 'saude',
-    loadChildren: () => import('./pages/saude/saude.module').then( m => m.SaudePageModule)
-  },
-  {
     path: 'ia',
     loadChildren: () => import('./pages/ia/ia.module').then( m => m.IaPageModule)
-  },
-  {
-    path: 'perfil',
-    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
     path: 'ia-detalhe',
@@ -34,6 +22,14 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'saude',
+    loadChildren: () => import('./saude/saude.module').then( m => m.SaudePageModule)
+  },
+  {
+    path: 'transporte',
+    loadChildren: () => import('./transporte/transporte.module').then( m => m.TransportePageModule)
   }
 ];
 

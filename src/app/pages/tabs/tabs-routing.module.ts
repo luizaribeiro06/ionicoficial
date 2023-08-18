@@ -17,14 +17,7 @@ const routes: Routes = [
         path: 'ia',
         loadChildren: () => import('../ia/ia.module').then(m => m.IaPageModule)
       },
-      {
-        path: 'saude',
-        loadChildren: () => import('../saude/saude.module').then(m => m.SaudePageModule)
-      },
-      {
-        path: 'transporte',
-        loadChildren: () => import('../transporte/transporte.module').then(m => m.TransportePageModule)
-      },
+      
       {
         path: '',
         redirectTo: '/tabs/home',

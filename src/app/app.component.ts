@@ -10,8 +10,8 @@ import { IonicModule } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home'},
-    { title: 'Transporte', url: '/transporte'},
-    { title: 'Saúde', url: '/saude'},
+    // { title: 'Transporte', url: '/transporte'},
+    // { title: 'Saúde', url: '/saude'},
     { title: 'Ia', url: '/ia'}
   ];
 
