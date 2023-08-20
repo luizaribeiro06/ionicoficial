@@ -9,9 +9,43 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="container">
-        
-    <h2>Saúde</h2>
-    </div>
+<ion-content [fullscreen]="true"> 
+
+  <ion-list *ngIf="listaSaude"> 
+
+    <ion-item-sliding *ngFor="let saude of listaSaude"> 
+      <ion-item lines="full" (click)="exibirSaude(saude)"> 
+        <ion-thumbnail slot="start"> 
+          <img *ngIf="saude.foto" src="{{saude.foto}}" /> 
+          <ion-icon *ngIf="!saude.foto" name="videocam-off"></ion-icon> 
+        </ion-thumbnail>
+
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>{{saude.nome}}</h1>
+            
+            <p>{{saude.data}}</p>
+            <ion-badge color="medium" *ngFor="let extra of saude.extra"> 
+              {{extra}}
+            </ion-badge>
+            <ion-icon name="star" [color]="saude.favorito===true ? 'warning' : ('light')"></ion-icon> 
+            
+          </div>
+        </ion-label>
+
+        <ion-chip [color]="saude.classificacao < 5 ? 'danger' : (saude.classificacao < 7 ? 'warning' : 'success')"
+          outline> 
+          <ion-label>{{saude.classificacao}}</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end"> 
+        <ion-item-option color="primary"> 
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+  </ion-list>
 </ion-content>

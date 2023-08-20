@@ -20,16 +20,20 @@ const routes: Routes = [
     loadChildren: () => import('./ia-detalhe/ia-detalhe.module').then( m => m.IaDetalhePageModule)
   },
   {
-    path: 'tabs',
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
-  },
-  {
     path: 'saude',
-    loadChildren: () => import('./saude/saude.module').then( m => m.SaudePageModule)
+    loadChildren: () => import('./pages/saude/saude.module').then( m => m.SaudePageModule)
   },
   {
     path: 'transporte',
-    loadChildren: () => import('./transporte/transporte.module').then( m => m.TransportePageModule)
+    loadChildren: () => import('./pages/transporte/transporte.module').then( m => m.TransportePageModule)
+  },
+  {
+    path: 'saude-detalhe',
+    loadChildren: () => import('./saude-detalhe/saude-detalhe.module').then( m => m.SaudeDetalhePageModule)
+  },
+  {
+    path: 'transporte-detalhe',
+    loadChildren: () => import('./transporte-detalhe/transporte-detalhe.module').then( m => m.TransporteDetalhePageModule)
   }
 ];
 

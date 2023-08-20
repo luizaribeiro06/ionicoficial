@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>{{transporte.nome}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card *ngIf="transporte"> 
+    <ion-card-header>
+      <img *ngIf="transporte.foto" src="{{transporte.foto}}" />
+      <ion-icon *ngIf="!transporte.foto" name="videocam-off"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>{{transporte.nome}} <ion-icon name="star" [color]="transporte.favorito===true ? 'warning' : ('light')"></ion-icon></h1>
+      <p>{{transporte.data}}
+        <ion-chip [color]="transporte.classificacao < 5 ? 'danger' : ((transporte.classificacao < 7 ? 'warning' : 'success'))"
+          outline>
+          <ion-label>{{transporte.classificacao}}</ion-label>
+        </ion-chip>
+      </p>
+      <h2>{{transporte.titulo}}</h2>
+      <p>{{transporte.paragrafo1}}</p>
+    <br/>
+      <h2>{{transporte.subtitulo}}</h2>
+      <p>{{transporte.paragrafo2}}</p>
+    </ion-card-content>
+    <ion-item class="extra">
+      <ion-badge color="medium" *ngFor="let extra of transporte.extra">{{extra}}</ion-badge>
+    </ion-item>
+   
+    <h2 class="h2">Principais apps de IA:</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label>Uber; </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cabify;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>99;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Blablacar;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>AroundMe;</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+
+</ion-content>

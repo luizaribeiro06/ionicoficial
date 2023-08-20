@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>{{saude.nome}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card *ngIf="saude"> 
+    <ion-card-header>
+      <img *ngIf="saude.foto" src="{{saude.foto}}" />
+      <ion-icon *ngIf="!saude.foto" name="videocam-off"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>{{saude.nome}} <ion-icon name="star" [color]="saude.favorito===true ? 'warning' : ('light')"></ion-icon></h1>
+      <p>{{saude.data}}
+        <ion-chip [color]="saude.classificacao < 5 ? 'danger' : ((saude.classificacao < 7 ? 'warning' : 'success'))"
+          outline>
+          <ion-label>{{saude.classificacao}}</ion-label>
+        </ion-chip>
+      </p>
+      <h2>{{saude.titulo}}</h2>
+      <p>{{saude.paragrafo1}}</p>
+    <br/>
+      <h2>{{saude.subtitulo}}</h2>
+      <p>{{saude.paragrafo2}}</p>
+    </ion-card-content>
+    <ion-item class="extra">
+      <ion-badge color="medium" *ngFor="let extra of saude.extra">{{extra}}</ion-badge>
+    </ion-item>
+   
+    <h2 class="h2">Principais apps de IA:</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label>Google Fit – monitoramento de exercícios;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>MyFitnessPal – diário alimentar;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Vitalk – saúde mental;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Lojong – meditação;</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Calm – relaxamento;</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+
+</ion-content>

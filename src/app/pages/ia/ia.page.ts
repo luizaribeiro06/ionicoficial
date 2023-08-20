@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {NavigationExtras, Router} from '@angular/router'
 import {IIa} from '../model/IIa';
 
@@ -13,30 +13,30 @@ ia: any;
 
   listaIa: IIa[] = [
     {
-      nome: 'Robôs',
+      nome: 'Tinder da pecuária: aplicativo ajuda o produtor dar match em bovinos.',
       data: '10/08/2023',
       classificacao: 8,
-      foto: 'https://www.techenet.com/wp-content/uploads/2023/08/Samsung-Inteligencia-artificial.jpg',
-      extra: [ 'IA', 'Samsung' ],
+      foto: 'https://media.discordapp.net/attachments/1135650904985579521/1142573933942554764/IMG_7805.jpg',
+      extra: [ 'IA', 'Tinder animal' ],
       pagina: '/robos',
       favorito: false,
-      titulo: "Samsung prepara revelação de robôs com capacidades de olfato e paladar",
-      paragrafo1: "No próximo Tech Day da Samsung, agendado para outubro, a empresa sul-coreana planeia surpreender a todos com uma revelação que ninguém esperava. Eles avançaram muito nos seus processadores, e parece que agora estamos a falar de robôs com capacidades humanas. E não estamos a falar de qualquer capacidade, mas dos sentidos de olfato e paladar!",
-      subtitulo:"Inovação no campo dos semicondutores", 
-      paragrafo2:"A Samsung, já reconhecida mundialmente pelos seus smartphones, também é uma líder na produção de ecrãs e processadores. Com as recentes informações que vieram à tona, soubemos que a empresa conseguiu integrar sensores de cheiro e paladar nos seus processadores. Portanto, no Tech Day, teremos a oportunidade de ver robôs humanóides equipados com esses inovadores semicondutores. Não está claro se vamos ver esses robôs em ação, mas esperamos ver pelo menos algumas imagens ou vídeos destes humanóides exibindo essas novas capacidades."
+      titulo: "Tinder da pecuária: aplicativo ajuda o produtor dar match em bovinos.",
+      paragrafo1: "A Embrapa e a Associação Nacional de Criadores Herd-Book Collares (ANC) desenvolveram uma ferramenta informatizada para ajudar o pecuarista a selecionar os cruzamentos entre os touros reprodutores e as vacas matrizes, de forma a definir o melhor acasalamento para gerar progênies com características específicas desejadas pelo pecuarista. A tecnologia vai ser lançada durante a 46ª edição da Expointer, em Esteio (RS), de 26 de agosto a 3 de setembro. O aplicativo permitirá que o criador selecione suas matrizes com base em informações das avaliações genéticas atualizadas, inclusive aprimoradas pela genômica quando for o caso, e escolha possíveis reprodutores para a cruza, tanto dentro de seu rebanho quanto entre touros de outros pecuaristas ou de centrais de inseminação. Assim, o produtor poderá visualizar quais resultados os cruzamentos irão gerar em relação a cada uma das DEPs (diferença esperada na progênie) disponíveis pelo programa de melhoramento genético da ANC (Programa de Melhoramento de Bovinos de Carne, Promebo).",
+      subtitulo:"Como funciona a calculadora?", 
+      paragrafo2:"“A Calculadora permite que o criador selecione as matrizes que ele quer cruzar com os reprodutores, tanto dele como de outros que tenham sêmen disponível para inseminação artificial. Assim, será possível prever qual vai ser o resultado de cada um dos touros que ele escolher, com as vacas que ele tem. Com isso, o criador vai saber o desempenho esperado nos filhos desse acasalamento e, comparando cada um dos acasalamentos, ele pode escolher qual o mais adequado”, explica Fernando Cardoso, chefe-geral da Embrapa PecuáriaSul. Conforme Cardoso, a Calculadora também permite prever e evitar resultados negativos nos acasalamentos. “O pecuarista pode escolher características para evitar que os animais tenham um desempenho desfavorável. Por exemplo, um animal com peso ao nascer muito alto, que pode dar problema de parto, um animal que tenha o umbigo ou o prepúcio do macho muito comprido, e pode dar lesão, a questão da ausência de pigmentação ocular para as raças Hereford e Braford, etc. Então ele pode evitar um desempenho ruim em características importantes, o que chamamos de caracterizar o nível de problema esperado e as chances de descarte involuntário dos animais que serão gerados. Assim, conseguimos minimizar o nível de problema e maximizar os índices e o valor genético dos animais”, destaca Cardoso."
     },
     {
-      nome: 'Dispositivo reconhece sons',
+      nome: 'Aria, a inteligência artificial nativa do navegador Opera, chega para iOS',
       data: '14/08/2023',
       classificacao: 9,
-      foto: 'https://s2-g1.glbimg.com/O0zs6GEAQC3WXzaOlYo_i3i86hg=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/K/3/fEcAm1Q7WwyFI7dmxkJA/jhoje-limpo-20230814-1315-frame-78786.jpeg',
-      extra: [ 'IA', 'Curupira' ],
-      pagina: '/curupira',
+      foto: 'https://media.discordapp.net/attachments/1135650904985579521/1142572162897682522/IMG_7802.webp?width=750&height=468',
+      extra: [ 'IA', 'Opera' ],
+      pagina: '/aria',
       favorito: false,
-      titulo: "Curupira: dispositivo utiliza inteligência artificial para reconhecer sons que representam ameaça à floresta",
-      paragrafo1: "A floresta amazônica vai ganhar um novo guardião: o Curupira. O aparelho já está em teste piloto na floresta da Universidade Estadual do Amazonas, em Manaus, onde a ideia nasceu. O dispositivo que ganhou o nome do ser mítico do folclore brasileiro conhecido por ser o guardião da floresta foi treinado para identificar sons anômalos, atípicos que identificam o perigo na floresta, como o som de motosserras, e notificar os gerenciadores para tomar medidas cabíveis.",
-      subtitulo:"Segunda fase", 
-      paragrafo2:"A segunda fase do projeto pretende expandir as capacidades do Curupira para identificar fumaça e vibrações, ampliando os parâmetros de alerta para atender queimadas e outros tipos de situações."
+      titulo: "Divulgação do App",
+      paragrafo1: "A Opera divulgou, nesta quarta-feira (16), que a inteligência artificial Aria chegou para todos os usuários do navegador Opera no iOS. A IA é uma parceria entre a Opera e a OpenAI e oferece serviços de IA generativa gratuitamente aos usuários. De acordo com a empresa, o serviço é aprimorado pela arquitetura Composer, que concede aos usuários acesso a resultados da web em tempo real. Segundo Lin Son, a co-CEO da Opera, a Aria já ultrapassou a marca de 1 milhão de usuários. “Estamos testemunhando um entusiasmo dos usuários pela ferramenta de IA, especialmente a Aria. Como resultado, estamos felizes em estender a ferramenta de IA da Opera aos nossos usuários do iOS“. Com a chegada da ferramenta aos dispositivos iOS, a empresa afirma ser a primeira companhia a oferece IA generativa gratuitamente aos usuários em suas principais plataformas. ",
+      subtitulo:"Navegador rápido e seguro para iOS", 
+      paragrafo2:"O navegador Opera para iOS oferece aos usuários navegação de qualidade com foco em segurança. O browser possui bloqueador de anúncios integrado, além da ferramenta Prevenção Inteligente de Rastreamento da Apple, que bloqueia cookies de rastreamento de terceiros e diálogos de cookies. Usuários interessados em navegar com o Opera e utilizar a inteligência artificial Aria, nos dispositivos iOS, podem acessar este link e baixar o navegador diretamente no seu dispositivo. Para utilizar a IA no browser basta acessar o aplicativo, logar na sua conta Opera e pronto! Você já estará apto a desfrutar das facilidades promovidas pela IA da Opera no iOS."
     },
     {
       nome: 'Figurinha criada a partir de IA',
@@ -52,44 +52,31 @@ ia: any;
       paragrafo2:"Como apontado pelo WaBetaInfo, essa novidade começou a ser testada na última atualização do WhatsApp beta para Android. O recurso funcionará através de um novo atalho de ‘Criar’ aba de figurinhas. Quando o usuário selecionar a opção de criar um novo adesivo, o WhatsApp abrirá uma nova página onde o usuário irá descrever a figurinha que quer fazer e o app irá gerar uma com inteligência artificial: Para a criação da imagem a IA irá utilizar uma plataforma desenvolvida pela Meta, que promete contar com recursos para garantir a segurança e privacidade para o usuário do WhatsApp. A funcionalidade não irá gerar imagens com visual livre, as figurinhas serão geradas com o mesmo estilo gráfico, o que será facilmente reconhecido por quem está recebendo. Caso o usuário considere um sticker ofensivo, ele poderá denunciar a arte."
     },
     {
-      nome: 'Deep Voice',
+      nome: 'Remini',
       data: '13/08/2023',
       classificacao: 8,
-      foto: 'https://tm.ibxk.com.br/2023/08/01/01113717947178.jpeg?ims=1120x420',
-      extra: [ 'IA', 'Voz' ],
-      pagina: '/deepvoice',
+      foto: 'https://media.discordapp.net/attachments/1135650904985579521/1142572553576128572/IMG_7803.jpg',
+      extra: [ 'IA', 'Remini' ],
+      pagina: '/remini',
       favorito: false,
-      titulo: "IA que cria voz: como funciona a inteligência artificial da Deep Voice?",
-      paragrafo1: "A inteligência artificial (IA) continua a nos surpreender com sua evolução e uma das áreas em que tem demonstrado um progresso surpreendente é a criação de voz! Uma das técnicas mais empolgantes é conhecida como Deep Voice, que permite à IA gerar vozes humanas extremamente realistas. Junto com a empolgação, a IA que cria voz também traz à tona diversas perguntas nas mentes das pessoas: Como gerar voz por inteligência artificial? Qual a melhor IA de voz? Há limites éticos para clonar a voz de alguém com IA? Se a curiosidade criou raízes por aí, venha conferir as respostas que encontramos sobre o incrível mundo do Deep Voice e demais tecnologias que estão revolucionando a forma como interagimos em sociedade!",
-      subtitulo:"O que é Deep Voice?", 
-      paragrafo2:"O Deep Voice é um modelo de aprendizado de máquina que simula a fala humana, usando rede neural com três ou mais camadas, para converter texto em fala ou transformar uma voz existente em uma nova voz com características diferentes, como timbre, entonação e velocidade. A base desse sistema é chamada de Deep Learning, um subconjunto do aprendizado de máquina que visa simular o comportamento do cérebro humano conforme descrito pelo International Business Machines Corporation (IBM). Essa tecnologia está presente em diversos produtos e serviços do nosso cotidiano, como assistentes digitais, controles remotos ativados por voz e detecção de fraudes em cartões de crédito, além de estar sendo aplicada em tecnologias emergentes como carros autônomos."
+      titulo: "Remini: fotos de bebês criadas por inteligência artificial ",
+      paragrafo1: "Imagens que simulam como você ficaria grávida ou como seria seu filho ou filha têm viralizado nas redes sociais. Os registros são criados no aplicativo Remini que, usando inteligência artificial (IA), consegue gerar diversas situações quando a pessoa envia os seus registros fotográficos originais. A ferramenta também vem sendo testada por alguns famosos, como Viih Tube, Pequena Lo e Virginia Fonseca. Disponível para Android e iPhone (iOS), para usar esse recurso dentro do app é preciso desembolsar R$ 50,90 semanais (versão Pro). Mas o Remini permite testar o recurso por até três dias sem pagar nada. Além das opções que estão 'trendando', a IA pode gerar você de noiva, se formando na universidade, de uniforme policial, modelando em uma grande avenida, com um corpo musculoso e mais.",
+      subtitulo:"Como criar fotos que simulam gravidez ou bebês", 
+      paragrafo2:"Antes de usar o app, vale ressaltar que nem todos os resultados são precisos. Por exemplo, no teste do g1 a mulher apareceu com três braços. Falhas também costumam aparecer nos dedos e nos dentes. Veja como criar: 1 - Após baixar o Remini no seu celular, toque na opção 'Fotos AI' na parte inferior do app; 2 - Escolha entre 8 e 12 fotos suas. O Remini considera imagens boas: 'selfies próximas, mesma pessoa, variedade de planos de fundo, expressões e ângulos de rosto'; 3 - Toque em 'Enviar suas selfies' e escolha 'Biblioteca de fotos' ou 'Câmera' (para fazer novas selfies); 4 - Após enviar as fotos, toque em 'Continuar' e escolha seu gênero; 5 - Depois, escolha um modelo (bebê, grávida ou outro) e, então, toque em 'Use esta imagem modelo'; 6 - Caso não queira assinar o app, toque no botão de degustação: 'Ainda não tem certeza? Ativar o teste grátis' e 'Continuar'; 7 - Depois, é só aguardar o app criar a foto"
     },  
     {
-      nome: 'Inteligência Artificial na moda',
-      data: '14/08/2023',
+      nome: 'Google utiliza inteligência artificial para resumir textos e reportagens. ',
+      data: '12/08/2023',
       classificacao: 7,
-      foto: 'https://revistaforum.com.br/u/fotografias/m/2023/8/14/f425x239-109843_124371_5050.png',
-      extra: [ 'IA', 'Roupa' ],
-      pagina: '/roupa',
+      foto: 'https://media.discordapp.net/attachments/1135650904985579521/1142573563870724177/IMG_7804.jpg?width=831&height=467',
+      extra: [ 'IA', 'Resumo' ],
+      pagina: '/resumo',
       favorito: false,
-      titulo: "Inteligência Artificial ajuda a descobrir se roupa serve: basta enviar uma foto",
-      paragrafo1: "Já pensou verificar como uma camisa vendida online fica nas medidas exatas do seu corpo? E poder combiná-la com o que você tem no guarda-roupa? Essa é uma das aplicações comerciais da inteligência artificial generativa que já está em uso no Brasil, e vai além da geração de textos descritivos de produtos, imagens ou atendimento ao cliente.Outro exemplo que está sendo implementado esta semana no país é o uso de IA generativa no ensino a distância, auxiliando os professores na preparação e avaliação dos alunos em debates em salas de aula na internet. Nos bastidores dos negócios, a IA está avançando na identificação de informações específicas em contratos e análise de perfis. A IA que vem sendo utilizada para a provação de vestuário online é a Doris, IA generativa criada pela empresa brasileira Doris.mobi. Seu foco é no comércio eletrônico de vestuário, ela foi colocada para uso nas lojas online das marcas de moda masculina Zapalla e Reserva recentemente.",
-      subtitulo:"Como funciona?", 
-      paragrafo2:"Ao enviar uma foto de corpo inteiro de frente e de lado pelo aplicativo Zapalla, em apenas oito segundos o cliente pode se visualizar usando a roupa escolhida na tela. “Quando o cliente envia a foto, a IA generativa extrai todas as medidas do corpo, levando em consideração que pessoas com o mesmo peso, altura e idade podem ter formas diferentes”, explica Lucas Santos, diretor de tecnologia da Doris.Mobi. “O nível de acurácia é de mais de 98%, evitando surpresas no caimento da roupa, o que torna a ferramenta mais assertiva em relação às  opções que estão no mercado”. A Doris é capaz de gerar o tom de pele e partes do corpo do cliente que não estavam visíveis na foto original. Com isso, a pessoa consegue ver como ficaria com peças que mostram mais o corpo, como uma regata ou uma bermuda, mesmo que tenha enviado a foto usando uma calça até os pés.Nas palavras de Santos, “o modelo de e-commerce é muito antigo e alguém precisava redesenhar o processo de venda pela internet”. Ele é líder de uma equipe de 12 desenvolvedores que se dedicaram um ano e quatro meses para construir a arquitetura computacional da Doris “do zero”. Ele esclarece que a IA generativa foi treinada com milhões de peças diferentes para aprender as características centrais de cada peça e aquelas que não são importantes ao vestir cada pessoa no ambiente digital. Desde que a gigante do varejo online Amazon estreou, em meados dos anos 1990, essa nova ferramenta marca uma mudança importante em um setor que teve pouca inovação, segundo a avaliação de André Nowill, sócio-diretor da Pimenta Full, gestora de sites de venda on-line que tem a Zapalla entre seus clientes. Conforme o executivo da Doris.mobi, até agora, a Doris ajudou a aumentar a taxa de conversão de vendas online de 9% para 12% para os comerciantes que estão utilizando a ferramenta. Após as marcas masculinas, a empresa está negociando contratos com marcas de moda feminina, que possuem um catálogo mais amplo."
-    },
-    {
-      nome: 'Deep Voice',
-      data: '13/08/2023',
-      classificacao: 8,
-      foto: '',
-      extra: [ 'IA', 'Voz' ],
-      pagina: '/deepvoice',
-      favorito: false,
-      titulo: "",
-      paragrafo1: "",
-      subtitulo:"", 
-      paragrafo2:""
-    },  
+      titulo: "Google utiliza inteligência artificial para resumir textos e reportagens. ",
+      paragrafo1: "O Google agora passa a resumir textos extensos e reportagens por meio de IA para disponibilizar aos leitores. A inteligência analisa o texto e consegue selecionar as partes de maior relevância, entregando um breve resumo ao usuário. A inovação faz parte do Search Generative Experience (SGE), o braço de ferramentas que incluem inteligência artificial do Google, que inclui também o Bard, IA generativa da empresa. A ferramenta da vez foi chamada de “SGE while browsing” (ou “SGE durante a navegação”, em tradução livre). A ferramenta ainda inclui uma opção generativa nos resumos, dando opções de perguntas que são respondidas ao longo dos textos, dando como opção “Qual a distância da Rota 66?”, em um texto que fala sobre a rodovia, como exemplo. A ferramenta já está em fase de testes no aplicativo do Google em dispositivos móveis, e deve chegar nos próximos dias ao Chrome.",
+      subtitulo:"Além de resumir, Google inclui cada vez mais IA em seus processos", 
+      paragrafo2:"Em maio deste ano, o Google aproveitou seu evento anual para mostrar que o foco da empresa realmente está na inclusão de inteligência artificial em seus processos. Sendo utilizada já para criar textos, editar fotos e até com a criação da sua própria IA generativa, o Bard, que já está disponível em português no Brasil."
+    }
     
   ];
 
